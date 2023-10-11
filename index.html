@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <center>
+      
+        <div class="grade">
+            <h2>GRADE CHECKER</h2>
+            <marquee behavior="" direction="">ENTER YOUR GRADE</marquee>
+            <input type="number" placeholder="Enter your score" id="gradecheck" >
+            <button onclick="numbercheck()">check</button>
+            <div id="display"></div>
+        </div>
+    </center>
+
+    <script>
+       function numbercheck(){
+        var clap = new Audio('images/claps-44774.mp3');
+         var inves = new Audio('images/inves.mp3');
+         var apostle = new Audio('images/apostle.mp3');
+         var chai = new Audio('images/chai.mp3');
+         var how = new Audio('how.mp3')
+        if (gradecheck.value == "") {
+            display.innerHTML ="Alaye, enter something jare"
+        }
+        else if( gradecheck.value >= 70 && gradecheck.value <= 100 ){
+          console.log("A");
+          display.innerHTML ="excellent"
+          clap.play();
+        }else if(gradecheck.value >=60  && gradecheck.value < 70 ){
+            console.log("B");
+            display.innerHTML ="very good"
+            inves.play();
+        }else if(gradecheck.value >=50  && gradecheck.value < 60 ){
+            console.log("C");
+            display.innerHTML ="Average"
+        }else if(gradecheck.value >=45  && gradecheck.value < 50 ){
+            console.log("D");
+            display.innerHTML ="pass"
+            apostle.play()
+       }else if(gradecheck.value >=40  && gradecheck.value < 45){
+            console.log("E");
+            display.innerHTML ="you are olodo"
+            chai.play()
+       }else if(gradecheck.value >=0  && gradecheck.value < 40 ){
+            console.log("F");
+            display.innerHTML ="Fail"
+            how.play();
+       }else {
+        console.log("ALAYA Enter correct number jare");
+       }
+    }
+    </script>
+</body>
+</html>

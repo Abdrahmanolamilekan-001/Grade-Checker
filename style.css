@@ -1,0 +1,68 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/119cde9213cc73e46f425c97aaf238b6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.grade{
+    border: 1px solid black;
+    height: 250px;
+    width: 450px;
+    border-radius:10px ;
+    margin-top: 200px;
+    background-color: black;
+}
+.grade h2{
+    font-size: 30px;
+    margin-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.grade marquee{
+    color: white;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.grade input{
+  padding: 17px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.grade button{
+  padding: 17px;
+  border-radius: 10px;
+}
+.grade div{
+    border: 1px solid black;margin-top: 10px;
+    width: 350px;
+    border-radius:10px ;
+    height: 50px;
+    padding: 20px;
+  background-color: white;
+}
+/* .circle{
+    border: 2px solid blue;
+    height: 100px;
+    width: 100px;
+    animation:box 3s 2s linear forwards infinite;
+    transform: translate(1500px);
+  }
+  
+  @keyframes box{
+      from{
+          background-color: aliceblue;
+          transform: translate(1500px);
+      }
+      to{
+          background-color: blue;
+          transform: translate(40px) rotate(360deg);
+          border-radius: 100%;
+          box-shadow: 5px 6px goldenrod,-5px -6px greenyellow;
+      }
+  
+  } */
